@@ -1,0 +1,19 @@
+.home-page {
+    .search-box {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .scroll-view {
+        width: 100%;
+        height: calc(100vh - 280px);
+        padding-bottom: env(safe-area-inset-bottom);
+        box-sizing: border-box;
+    }
+    .no-more {
+        color: #B2B2B2;
+        font-size: 24px;
+        padding: 10px 0 30px;
+        text-align: center;
+        width: 100%;
+    }
+}

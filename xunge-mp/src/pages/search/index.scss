@@ -1,0 +1,102 @@
+.search-page {
+  .search-box {
+    margin-top: 20px;
+  }
+  .scroll-view {
+    width: 100%;
+    height: calc(100vh - 128px);
+    padding-bottom: env(safe-area-inset-bottom);
+    box-sizing: border-box;
+    background-color: #f1f2f3;
+  }
+  .search-suggestions {
+    padding-top: 32px;
+    margin-bottom: 40px;
+    padding-left: 28px;
+    padding-right: 28px;
+    &-title {
+      font-family: uniqueID;
+      font-size: 28px;
+      font-weight: normal;
+      line-height: 40px;
+      color: #333333;
+      font-weight: 600;
+    }
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    &-item {
+      font-family: uniqueID;
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 33px;
+      color: #666666;
+      padding: 12px 24px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  .search-result {
+    background-color: #ffffff;
+    width: calc(100% - 48px);
+    margin: 40px auto 0;
+    border-radius: 8px;
+    padding: 24px 24px;
+    box-sizing: border-box;
+    &-title {
+      font-family: uniqueID;
+      font-size: 28px;
+      font-weight: normal;
+      line-height: 40px;
+      color: #333333;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 16px 0;
+      box-sizing: border-box;
+      font-size: 28px;
+      border-bottom: 1px solid #f1f2f3;
+      &:last-child {
+        border-bottom: none;
+      }
+      &-img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-right: 24px;
+      }
+    }
+  }
+  .search-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 160px auto 0;
+    &-img {
+      width: 260px;
+      height: 260px;
+    }
+    &-text {
+      height: 33px;
+      font-family: uniqueID, uniqueID;
+      font-weight: normal;
+      font-size: 24px;
+      color: #666666;
+      line-height: 33px;
+      text-align: left;
+      font-style: normal;
+      text-transform: none;
+    }
+  }
+}

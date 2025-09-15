@@ -1,0 +1,50 @@
+.list-card-uploader {
+  .ant-upload-list-picture-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ant-upload-list-picture-card,
+  .ant-upload-select {
+    border: 0 !important;
+    .ant-upload {
+      width: 107px !important;
+      height: 77px !important;
+      background: #f2f7fb;
+      border: 1px solid #dae9f6;
+      border-radius: 8px;
+    }
+  }
+  .ant-upload-list-item-thumbnail {
+    > img {
+      object-fit: cover !important;
+    //   border-radius: 8px;
+    }
+  }
+  .ant-upload-list-item-container {
+    width: 107px !important;
+    height: 77px !important;
+  }
+  .ant-upload-list-item-container+.ant-upload-select {
+    display: none !important;
+  }
+  .ant-upload-list-item {
+    width: 107px !important;
+    height: 77px !important;
+    background: #f2f7fb;
+    border: 1px solid #dae9f6;
+    border-radius: 8px;
+  }
+  .ant-upload-list-item-image {
+    object-fit: cover;
+  }
+}
+
+.uploader-desc {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #707070;
+  text-align: center;
+}

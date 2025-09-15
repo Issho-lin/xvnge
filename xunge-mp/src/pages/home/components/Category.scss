@@ -1,0 +1,23 @@
+.category-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+    .category-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-img {
+            width: 88px;
+            height: 83px;
+        }
+        &-label {
+            font-size: 24px;
+            color: #7E7E7E;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+    }
+}

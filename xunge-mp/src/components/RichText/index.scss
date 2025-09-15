@@ -1,0 +1,15 @@
+.wxParserText.wxParser-inline {
+  font-size: 28px;
+  line-height: 1.8;
+}
+.wxParser-img {
+  width: 100%;
+}
+
+.wxParser-p {
+  width: 100%;
+  text-indent: 0 !important;
+  .wxParserText.wxParser-inline {
+    text-indent: 2em;
+  }
+}

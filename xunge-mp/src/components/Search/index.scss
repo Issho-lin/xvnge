@@ -1,0 +1,28 @@
+.search-box {
+  width: 670px;
+  height: 66px;
+  margin: 32px auto;
+  border: 1px solid #cdcdcd;
+  border-radius: 33px;
+  padding-right: 46px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .search-input {
+    width: calc(100% - 40px);
+    height: 100%;
+    border-radius: 33px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    font-size: 24px;
+  }
+  .input-placeholder {
+    font-size: 24px;
+    color: #b2b2b2;
+  }
+  .search-icon {
+    width: 34px;
+    height: 34px;
+  }
+}

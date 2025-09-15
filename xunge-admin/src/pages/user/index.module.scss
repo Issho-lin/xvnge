@@ -1,0 +1,37 @@
+.user-center {
+  padding-top: 20px;
+  padding-right: 12px;
+  padding-left: 12px;
+  .title {
+    margin-bottom: 30px;
+    color: #3c3c3c;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    line-height: 20px;
+  }
+  :global {
+    .ant-space {
+        margin-bottom: 0 !important;
+    }
+    .ant-upload-list-item {
+        padding: 0 !important;
+        &::before {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+    .ant-form-item {
+        margin-bottom: 12px !important;
+        .ant-form-item-no-colon {
+            color: #757171;
+        }
+    }
+  }
+  .pass-label {
+    margin-right: 82px;
+  }
+  .update-pass {
+    margin-left: 20px;
+  }
+}

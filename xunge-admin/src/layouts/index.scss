@@ -1,0 +1,38 @@
+.ant-menu-item {
+    margin: 4px 0 !important;
+    width: 200px !important;
+    border-radius: 0 !important;
+}
+
+.ant-menu-item-selected {
+    .ant-menu-title-content {
+        a {
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                width: 4px;
+                background-color: #1684fc;
+            }
+        }
+    }
+}
+.header-logo {
+    color: #ffffff;
+    font-family: PingFangSC-bold;
+    font-size: 26px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    .logo {
+        width: 80px;
+        margin-right: 10px;
+    }
+}
+
+:where(.css-dev-only-do-not-override-198z3z1).ant-layout {
+    background-color: #e5eef7;
+}

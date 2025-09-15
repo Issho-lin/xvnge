@@ -1,0 +1,47 @@
+html[theme='dark'] {
+  --w-e-textarea-bg-color: var(--color-drawer-card);
+  --w-e-textarea-color: #fff;
+  --w-e-textarea-border-color: var(--color-box-border);
+  --w-e-textarea-slight-border-color: var(--color-box-border);
+  --w-e-textarea-slight-color: #d4d4d4;
+  --w-e-textarea-slight-bg-color: #081c59;
+  --w-e-textarea-selected-border-color: #b4d5ff; // 选中的元素，如选中了分割线
+  --w-e-textarea-handler-bg-color: #4290f7; // 工具，如图片拖拽按钮
+
+  // toolbar - css vars
+  --w-e-toolbar-color: var(--color-label);
+  --w-e-toolbar-bg-color: var(--color-box-header);
+  --w-e-toolbar-active-color: var(--color-value);
+  --w-e-toolbar-active-bg-color: rgba(0, 0, 0, 0.2);
+  --w-e-toolbar-disabled-color: #999;
+  --w-e-toolbar-border-color: var(--color-hr-border);
+
+  // modal - css vars
+  --w-e-modal-button-bg-color: #3455b9;
+  --w-e-modal-button-border-color: var(--color-box-border);
+
+  .rich-editor-container {
+    z-index: 100;
+    border: 1px solid var(--color-box-border);
+  }
+  .rich-editor-tool-bar {
+    border-bottom: 1px solid var(--color-box-border);
+  }
+}
+
+.rich-editor-container {
+  z-index: 100;
+  border: 1px solid #ddd;
+}
+
+.rich-editor-tool-bar {
+  border-bottom: 1px solid #ddd;
+}
+
+.w-e-textarea-video-container {
+  background-image: unset;
+  border: none;
+  video:not(video[width]) {
+    width: 100%;
+  }
+}

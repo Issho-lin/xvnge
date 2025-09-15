@@ -1,0 +1,12 @@
+/*
+ * @Author: linqibin
+ * @Date: 2025-06-10 08:57:26
+ * @LastEditors: linqibin
+ * @LastEditTime: 2025-06-10 08:57:40
+ * @Description: 
+ * 
+ * Copyright (c) 2025 by 智慧空间研究院/金地空间科技, All Rights Reserved. 
+ */
+export default definePageConfig({
+  navigationBarTitleText: '搜索'
+})

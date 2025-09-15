@@ -1,0 +1,39 @@
+.banner {
+  height: 320px;
+  width: 750px;
+  &_item {
+    width: 100%;
+    height: 100%;
+  }
+}
+.banner-container {
+  height: 320px;
+  width: 750px;
+  margin: 0 auto 32px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner_indicator {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_item {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    margin: 0 6px;
+    transition: all 0.3s ease-in-out;
+  }
+  &_item_active {
+    width: 30px;
+    height: 10px;
+    background-color: #2A89FF;
+    border-radius: 25%;
+  }
+}

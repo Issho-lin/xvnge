@@ -1,0 +1,18 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ant-form-item-extra {
+  font-size: 12px !important;
+}
+
+.ant-form-item-explain {
+  display: flex;
+  align-items: center;
+}
+.ant-form-item-explain-error {
+  margin-right: 10px;
+}

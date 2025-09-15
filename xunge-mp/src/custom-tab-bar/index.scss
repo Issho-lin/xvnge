@@ -1,0 +1,45 @@
+/*
+ * @Author: linqibin
+ * @Date: 2022-08-01 11:55:58
+ * @LastEditors: linqibin
+ * @LastEditTime: 2025-05-30 17:23:28
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by 研发中心/金地楼宇, All Rights Reserved. 
+ */
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 146px;
+  background: white;
+  display: flex;
+  padding-bottom: env(safe-area-inset-bottom);
+  z-index: 99999;
+  box-shadow: 3px 2px 6px 0px rgba(0, 0, 0, 0.28);
+}
+
+.tab-bar-item {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  background: transparent;
+  &::after {
+    display: none;
+  }
+  &-icon {
+    width: 58px;
+    height: 58px;
+  }
+  &-text {
+    font-size: 24px;
+    color: #333333;
+    line-height: 34px;
+    margin-top: 10px;
+  }
+}
