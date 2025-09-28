@@ -2,7 +2,7 @@
  * @Author: linqibin
  * @Date: 2025-05-29 17:54:00
  * @LastEditors: linqibin
- * @LastEditTime: 2025-07-02 18:08:20
+ * @LastEditTime: 2025-09-28 09:38:35
  * @Description:
  *
  * Copyright (c) 2025 by 智慧空间研究院/金地空间科技, All Rights Reserved.
@@ -20,6 +20,7 @@ import { useTabsStore } from "@/store/tabs";
 import { AES } from "@/utils/crypto";
 import { loginApi } from '@/api/login'
 import { useRequest } from "ahooks";
+import { useUserInfo } from "@/store/userInfo";
 
 interface Fields {
   username: string;
@@ -31,6 +32,7 @@ const Login: React.FC = () => {
   // const [msg, contextHolder] = message.useMessage();
   const navigate = useNavigate();
   const { addTab, clearTabs } = useTabsStore();
+  const { setUserType } = useUserInfo();
   const [isRemember, setIsRemember] = useState(false);
 
   const onRemember = (v: boolean) => {
@@ -62,6 +64,7 @@ const Login: React.FC = () => {
           { expires: 1 }
         );
         // 登录成功
+        setUserType(res.userType)
         addTab({ key: "/banner", label: "首页Banner" });
         navigate("/banner");
       }

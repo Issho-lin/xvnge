@@ -87,7 +87,7 @@ const Layout: React.FC = () => {
   }, [pathname]);
 
   const { getImageHost } = useImageHost();
-  const { userInfo, getUserInfo } = useUserInfo();
+  const { userInfo, getUserInfo, userType } = useUserInfo();
 
   useEffect(() => {
     getImageHost();
@@ -98,6 +98,14 @@ const Layout: React.FC = () => {
     getUserInfo();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  const menuListWithLogin = useMemo(() => {
+    if (userType === 0) {
+      return menuList;
+    } else {
+      return menuList.filter((item) => item.key !== "account");
+    }
+  }, [userType])
 
   return (
     <AntLayout>
@@ -130,7 +138,7 @@ const Layout: React.FC = () => {
             mode="inline"
             selectedKeys={menuSelectedKeys}
             style={{ borderRight: 0, backgroundColor: "#ffffff" }}
-            items={menuList}
+            items={menuListWithLogin}
             onClick={(e) => {
               const item = MENU_MAP.get(`/${e.key}`);
               if (item) {
